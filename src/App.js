@@ -8,7 +8,7 @@ function App() {
       <h1>Portfolio</h1>
       <nav
         style={{
-          borderBottom: "sold 1px",
+          borderBottom: "solid 1px",
           paddingBottom: "1rem"
         }}
         >
