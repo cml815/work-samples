@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { getProjects } from "../data";
 
 export default function Projects() {
@@ -12,13 +12,19 @@ export default function Projects() {
         }}
       >
         {projects.map(project => (
-          <Link
-            style={{ display: "block", margin: "1rem 0" }}
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                display: "block",
+                margin: "1rem 0",
+                color: isActive ? "red" : ""
+              };
+            }}
             to={`/projects/${project.number}`}
             key={project.number}
           >
             {project.name}
-          </Link>
+          </NavLink>
         ))}
       </nav>
       <Outlet />
