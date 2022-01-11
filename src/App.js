@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
           <Link to="/projects">Projects</Link> | {" "}
           <Link to="/about">About</Link>
       </nav>
+      <Outlet />
     </div> 
   );
 }
