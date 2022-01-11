@@ -14,6 +14,14 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element= {<App />} />
         <Route path="projects" element={<Projects />}>
+            <Route 
+              index
+              element={
+                <main style={{ padding: "1rem"}}>
+                  <p>Select a project</p>
+                </main>
+              }
+            />
             <Route path=":projectId" element={<Project />} />
         </Route>
         <Route path="about" element={<About />} />
