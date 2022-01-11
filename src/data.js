@@ -34,3 +34,10 @@ let projects = [
 export function getProjects() {
   return projects;
 }
+
+export function getProject(number) {
+  return projects.find(
+    project => project.number === number
+  );
+}
+
