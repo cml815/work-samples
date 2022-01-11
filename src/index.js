@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Projects from './routes/projects';
+import Project from './routes/project'
 import About from './routes/about';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +13,9 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element= {<App />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="projects" element={<Projects />}>
+            <Route path=":projectId" element={<Project />} />
+        </Route>
         <Route path="about" element={<About />} />
         <Route
           path="*"

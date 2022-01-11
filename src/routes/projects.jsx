@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { getProjects } from "../data";
 
 export default function Projects() {
@@ -21,6 +21,7 @@ export default function Projects() {
           </Link>
         ))}
       </nav>
+      <Outlet />
     </div>
   );
 }
