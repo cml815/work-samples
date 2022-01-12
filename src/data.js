@@ -1,6 +1,6 @@
 let projects = [
   {
-    name: "Santa Monica",
+    name: "Content Marketing",
     number: 1995,
     amount: "$10,800",
     due: "12/05/1995"

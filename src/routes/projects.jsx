@@ -1,6 +1,5 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import { getProjects } from "../data";
-import Project from "./project";
 
 export default function Projects() {
   let projects = getProjects();
@@ -14,7 +13,7 @@ export default function Projects() {
         }}
       >
         <input
-          value={searchParams.get("filter") | ""}
+          value={searchParams.get("filter") || ""}
           onChange={event => {
             let filter = event.target.value;
             if (filter) {
