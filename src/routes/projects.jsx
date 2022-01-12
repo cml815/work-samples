@@ -1,8 +1,10 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import { getProjects } from "../data";
+import Project from "./project";
 
 export default function Projects() {
   let projects = getProjects();
+  let [searchParams, setSearchParams] = useSearchParams();
   return (
     <div style={{ display: "flex" }}>
       <nav
@@ -11,7 +13,25 @@ export default function Projects() {
           padding: "1rem"
         }}
       >
-        {projects.map(project => (
+        <input
+          value={searchParams.get("filter") | ""}
+          onChange={event => {
+            let filter = event.target.value;
+            if (filter) {
+              setSearchParams({ filter });
+            } else {
+              setSearchParams({});
+            }
+          }}
+          />
+        {projects
+          .filter(project => {
+            let filter = searchParams.get("filter");
+            if (!filter) return true;
+            let name = project.name.toLowerCase();
+            return name.startsWith(filter.toLowerCase());
+          })
+        .map(project => (
           <NavLink
             style={({ isActive }) => {
               return {
