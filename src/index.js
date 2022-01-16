@@ -6,6 +6,7 @@ import App from './App';
 import Projects from './routes/projects';
 import Project from './routes/project'
 import About from './routes/about';
+import sideNav from './components/sideNav';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -17,7 +18,7 @@ ReactDOM.render(
             <Route 
               index
               element={
-                <main style={{ padding: "1rem"}}>
+                <main style={{ padding: "0"}}>
                   <p>Select a project</p>
                 </main>
               }
@@ -28,7 +29,7 @@ ReactDOM.render(
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main style={{ padding: "0rem" }}>
             <p>There's nothing here!</p>
         </main>
           }

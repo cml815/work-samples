@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./side-nav.module.css";
 
-export function SideNav() {
+export function sideNav() {
   return (
     <nav className="menu">
         <Link to="/projects">Projects</Link> | {" "}
