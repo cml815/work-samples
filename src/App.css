@@ -1,4 +1,8 @@
+.navTest {
+  border-right: solid 1px;
+  padding: 1rem;
 
+}
 .App {
   text-align: center;
 }
@@ -23,6 +27,7 @@
   justify-content: center;
   text-align: center;
   height: 15vh;
+  padding-top: 2rem;
 }
 
 button  {

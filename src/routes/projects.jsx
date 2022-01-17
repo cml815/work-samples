@@ -1,4 +1,5 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
+import '../App.css';
 import { getProjects } from "../data";
 
 export default function Projects() {
@@ -6,12 +7,7 @@ export default function Projects() {
   let [searchParams, setSearchParams] = useSearchParams();
   return (
     <div style={{ display: "flex" }}>
-      <nav
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem"
-        }}
-      >
+      <nav className="navTest">
         <input
           value={searchParams.get("filter") || ""}
           onChange={event => {
