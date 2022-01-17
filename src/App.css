@@ -1,6 +1,49 @@
+
 .App {
   text-align: center;
 }
+
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+  height: 100vh;
+}
+
+.Container-text {
+  padding: .5rem 1rem;
+  background-color: white;
+}
+
+.Container-btn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: center;
+  text-align: center;
+  height: 15vh;
+}
+
+button  {
+  display: inline-block;
+  background-color: orchid;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.btn-cta {
+  width: 100%;
+  padding: 1rem;
+}
+
+.btn-cta:hover {
+  background-color: rgb(252, 126, 248);
+  cursor: pointer;
+}
+
+
 
 .App-logo {
   height: 40vmin;
