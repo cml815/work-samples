@@ -14,7 +14,6 @@
 
 .Container-text {
   padding: .5rem 1rem;
-  background-color: white;
 }
 
 .Container-btn {
@@ -31,11 +30,13 @@ button  {
   background-color: orchid;
   width: 25%;
   border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 .btn-cta {
   width: 100%;
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .btn-cta:hover {

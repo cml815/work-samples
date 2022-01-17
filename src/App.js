@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="Container-btn">
         <Link to="/projects">
-        <button className="btn-cta">Portfolio</button>
+        <button className="btn-cta">View my portfolio!</button>
         </Link>
       </div>
     </div> 
