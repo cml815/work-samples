@@ -7,6 +7,8 @@ import Projects from './routes/projects';
 import Project from './routes/project'
 import About from './routes/about';
 // import sideNav from './components/sideNav';
+import './components/Button.jsx'
+import './components/Button.css'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

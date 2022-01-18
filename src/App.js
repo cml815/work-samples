@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 // import { SideNav } from './components/sideNav'
 import './global.css';
 import './App.css';
+import './components/Button.jsx'
 
 export default function App() {
   return (
