@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 import './global.css';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <>
     <div className="Container">
@@ -22,5 +22,4 @@ function App() {
   );
 }
 
-export default App;
 
