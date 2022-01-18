@@ -1,13 +1,13 @@
 let projects = [
   {
     name: "Content Marketing",
-    number: 1995,
+    number: 2,
     amount: "$10,800",
     due: "12/05/1995"
   },
   {
     name: "Grant Writing",
-    number: 2000,
+    number: 1,
     amount: "$8,000",
     due: "10/31/2000"
   },

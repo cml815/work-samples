@@ -1,8 +1,13 @@
 .navTest {
-  border-right: solid 1px;
+  border-right: dotted 1px;
   padding: 1rem;
-
 }
+
+.searchBox {
+  background-color: yellow;
+}
+
+
 .App {
   text-align: center;
 }

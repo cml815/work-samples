@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div style={{ display: "flex" }}>
       <nav className="navTest">
-        <input
+        <input className="searchBox"
           value={searchParams.get("filter") || ""}
           onChange={event => {
             let filter = event.target.value;
