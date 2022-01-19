@@ -44,7 +44,7 @@ export default function Projects() {
         ))}
       </nav>
       <section className="autoGrid">
-
+        
       </section>
       <Outlet />
     </div>

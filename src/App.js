@@ -1,26 +1,39 @@
-import logo from './logo.svg';
-import { Link, Outlet } from 'react-router-dom';
-// import { SideNav } from './components/sideNav'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './global.css';
-import './App.css';
+import Projects from './routes/projects';
+import Project from './routes/project'
+import About from './routes/about';
+import Home from './routes/home';
+// import sideNav from './components/sideNav';
 import './components/Button.jsx'
+import './components/Button.css'
+import reportWebVitals from './reportWebVitals';
 
 export default function App() {
   return (
-    <>
-    <div className="Container">
-      <div className="Container-text">
-      <h1>Connected</h1>
-      <h2>I'm Caroline Leopold and I help audiences grasp health, research and technology.</h2>
-      </div>
-      <div className="Container-btn">
-        <Link to="/projects">
-        <button className="btn-cta">View my portfolio!</button>
-        </Link>
-      </div>
-    </div> 
-    </>
-  );
+      <Routes>
+        <Route path="/" element= {<Home />} />
+        <Route path="/projects" element={<Projects />}>
+            <Route 
+              index
+              element={
+                <main className="directoryContainer">
+                  <p>Select a project</p>
+                </main>
+              }
+            />
+            <Route path="/:id" element={<Project />} />
+        </Route>
+        <Route path="/about" element={<About />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "0rem" }}>
+            <p>There's nothing here!</p>
+        </main>
+          }
+        />
+      </Routes>
+);
 }
-
-

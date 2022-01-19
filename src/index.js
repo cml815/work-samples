@@ -1,42 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './global.css';
+import { BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
-import Projects from './routes/projects';
-import Project from './routes/project'
-import About from './routes/about';
-// import sideNav from './components/sideNav';
-import './components/Button.jsx'
-import './components/Button.css'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Routes>
-        <Route path="/" element= {<App />} />
-        <Route path="projects" element={<Projects />}>
-            <Route 
-              index
-              element={
-                <main className="directoryContainer">
-                  <p>Select a project</p>
-                </main>
-              }
-            />
-            <Route path=":id" element={<Project />} />
-        </Route>
-        <Route path="about" element={<About />} />
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "0rem" }}>
-            <p>There's nothing here!</p>
-        </main>
-          }
-        />
-      </Routes>
+      <App />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
@@ -46,3 +17,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
