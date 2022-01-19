@@ -43,10 +43,13 @@ export default function Projects() {
           </NavLink>
         ))}
       </nav>
+      <section className="autoGrid">
+
+      </section>
       <Outlet />
     </div>
-    <h2>Check check</h2>
     </>
+    
   );
 }
 

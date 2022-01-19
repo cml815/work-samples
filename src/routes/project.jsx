@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function Project() {
   let params = useParams();
-  let project = getProject(parseInt(params.projectId, 10));
+  let project = getProject(parseInt(params.id, 10));
   return (
     <main className= "projectContainer">
       <h2>{project.name}</h2>

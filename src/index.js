@@ -25,7 +25,7 @@ ReactDOM.render(
                 </main>
               }
             />
-            <Route path=":projectId" element={<Project />} />
+            <Route path=":id" element={<Project />} />
         </Route>
         <Route path="about" element={<About />} />
         <Route
