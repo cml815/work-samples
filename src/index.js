@@ -20,7 +20,7 @@ ReactDOM.render(
             <Route 
               index
               element={
-                <main style={{ padding: "0"}}>
+                <main className="directoryContainer">
                   <p>Select a project</p>
                 </main>
               }

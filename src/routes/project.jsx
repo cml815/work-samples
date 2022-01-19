@@ -6,12 +6,11 @@ export default function Project() {
   let params = useParams();
   let project = getProject(parseInt(params.projectId, 10));
   return (
-    <main className= "mainProjectView">
-      <h2> Project Stat: {project.amount}</h2>
-      <p>
-        {project.name}: {project.number}
+    <main className= "projectContainer">
+      <h2>{project.name}</h2>
+      <p>{project.due}</p>
+      <p>{project.category}
       </p>
-      <p>Due Date: {project.due}</p>
     </main>
   );
 }

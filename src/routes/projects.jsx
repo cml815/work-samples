@@ -6,6 +6,7 @@ export default function Projects() {
   let projects = getProjects();
   let [searchParams, setSearchParams] = useSearchParams();
   return (
+    <>
     <div style={{ display: "flex" }}>
       <nav className="navTest">
         <input className="searchBox" 
@@ -44,6 +45,8 @@ export default function Projects() {
       </nav>
       <Outlet />
     </div>
+    <h2>Check check</h2>
+    </>
   );
 }
 
